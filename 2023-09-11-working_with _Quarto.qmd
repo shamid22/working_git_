@@ -1,0 +1,43 @@
+---
+title: "Working with Quarto and git"
+author: 
+  - name:Suhib Hamid
+  ORCID:0009-0006-2218-3874
+  email:suhibosama@gmail.com
+  affiliations:BSE
+  address: 1055 16th N
+  City:
+  state:
+  postol-code:
+ 
+date: today
+format: 
+  html:
+    theme: spacelab
+    self-contained: true
+editor: source
+---
+
+## Introduction
+
+We are going to be using a document generating framework (Quarto, built off of RMarkdown) to explore how to use git and give us a background into using Quarto to generate a document.  
+
+Lots of help can be found [here](https://quarto.org/docs/guide/)
+
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
